@@ -51,7 +51,7 @@ fi
 
 if [ $NUM_LINES -gt 0 ]; then
   calc_lines
-  echo "$(hostname) | ${USED_MEM}/${TOTAL_MEM}MB | [${LINES}] CPU: ${CPU}% | LOAD: ${LOAD} | $(date '+%Y-%m-%d %H:%M')"
+  echo "$(hostname) | ${USED_MEM}/${TOTAL_MEM}MB | [${LINES}] CPU: ${CPU}% | $(date '+%Y-%m-%d %H:%M')"
 else
-  echo "$(hostname) | ${USED_MEM}/${TOTAL_MEM}MB | CPU: ${CPU}% | LOAD: ${LOAD} | $(date '+%Y-%m-%d %H:%M')"
+  echo "$(hostname) | ${USED_MEM}/${TOTAL_MEM}MB | CPU: ${CPU}% | $(date '+%Y-%m-%d %H:%M')"
 fi
