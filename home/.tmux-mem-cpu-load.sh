@@ -46,7 +46,7 @@ elif [[ $OSTYPE =~ linux* ]]; then
 
   mem_info=($(free -m))
   TOTAL_MEM=${mem_info[7]}
-  USED_MEM=${mem_info[15]}
+  USED_MEM=${mem_info[8]}
 fi
 
 if [ $NUM_LINES -gt 0 ]; then
